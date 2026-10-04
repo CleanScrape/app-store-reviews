@@ -24,7 +24,7 @@ Review count | 20
 ## Install
 
 ```bash
-pip install git+https://github.com/CleanScrape/app-store-reviews
+pip install app-store-reviews
 ```
 
 Then set your Apify API token. A free Apify account includes $5 of usage a month. Copy the token from [Apify Console > Settings > API & Integrations](https://console.apify.com/settings/integrations).
