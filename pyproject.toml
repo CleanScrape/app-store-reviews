@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "app-store-reviews"
+version = "0.1.0"
+description = "Drop-in replacement for app-store-scraper (archived): App Store and Google Play reviews with the same API. Runs on Apify."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "CleanScrape", email = "contact.cleanscrape@gmail.com" }]
+keywords = ["app-store-scraper", "app store reviews", "google play reviews", "google-play-scraper", "ios reviews", "android reviews", "apify"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = ["requests>=2.25"]
+
+[project.urls]
+Homepage = "https://github.com/CleanScrape/app-store-reviews"
+Issues = "https://github.com/CleanScrape/app-store-reviews/issues"
+"Reviews Actor" = "https://apify.com/cleanscrape/app-store-reviews-scraper"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/app_store_reviews"]
